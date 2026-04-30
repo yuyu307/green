@@ -84,35 +84,21 @@
             width: 100%;
         }
 
-        #home {
-            width: 100%;
-            height: 100vh;
-            background: url("https://s41.ax1x.com/2026/04/29/peIhNfU.jpg") center/cover no-repeat;
-            background-color: var(--primary-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-size: 56px;
-            font-weight: bold;
-            text-shadow: 0 0 30px rgba(0,0,0,0.6);
-            letter-spacing: 8px;
-            position: relative;
-            animation: homeFade 1.5s ease-in-out;
-        }
-        #home::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(42, 61, 51, 0.2);
-        }
-        #home h1 {
-    z-index: 2;
-    animation: textUp 1s ease 0.5s backwards;
-    font-family: "华文新魏", serif; /* 新增：设置华文新魏字体 */
+       #home {
+    width: 100%;
+    height: 100vh;
+    /* 只保留纯色背景，删除所有图片相关代码 */
+    background-color: var(--bg-green-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    font-size: 56px;
+    font-weight: bold;
+    text-shadow: 0 0 30px rgba(0,0,0,0.6);
+    letter-spacing: 8px;
+    position: relative;
+    animation: homeFade 1.5s ease-in-out;
 }
         section {
             padding: 120px 60px;
@@ -471,6 +457,13 @@
                 <p>清代</p>
             </div>
         </div>
+                
+        <!-- 组图 和上方单图同宽适配 完整不裁剪 -->
+<div style="margin: 30px 15px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
+    <img src="https://s41.ax1x.com/2026/04/29/peIhNfU.jpg" 
+         alt="五朝筑韵组图" 
+         
+</div>
     </section>
 
     <!-- 图片放大弹窗 -->
@@ -486,7 +479,7 @@
    <section id="tech">
     <h2>创新驱动</h2>
 
-    <p>在作品落地呈现中，我们构建了“三维立体”的传播体系。</p>
+    <p>在作品落地呈现中，我们构建了“三维立体”的传播方式。</p>
     <p>首先，科普教育化：将唐、宋、元、明、清五朝经典建筑，设计为中小学传统文化研学科普任务卡。卡片正面印建筑风貌，背面印朝代知识点与营造谜题，让每张卡片都成为可随身携带的“移动课堂”。</p>
 
   
@@ -503,11 +496,11 @@
    <!-- 文创图片三排布局：每排5张，共15张 -->
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0;">
     <!-- 第1排（5张） -->
-    <img src="" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
-    <img src="e:\2026平面设计竞赛\演示\wangye\新建文件夹\huizhang\046AEA7F2DADD26D0A6046E547DB73FA.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
-    <img src="E:\2026平面设计竞赛\演示\wangye\新建文件夹\huizhang\B0494FA97B2BEC429AF1E1CE5D149F65.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
-    <img src="E:\2026平面设计竞赛\演示\wangye\新建文件夹\huizhang\3B45943A6F7667C09E29E3436F5E5C17.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
-    <img src="E:\2026平面设计竞赛\演示\wangye\新建文件夹\huizhang\3B45943A6F7667C09E29E3436F5E5C17.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
+    <img src="https://s41.ax1x.com/2026/04/30/peo14YD.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
+    <img src="https://s41.ax1x.com/2026/04/30/peo1WTK.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
+    <img src="https://s41.ax1x.com/2026/04/30/peo1oSH.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
+    <img src="https://s41.ax1x.com/2026/04/30/peo15fe.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
+    <img src="https://s41.ax1x.com/2026/04/30/peo1hFO.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
 
     <!-- 第2排（5张） -->
     <img src="https://s41.ax1x.com/2026/04/28/pe56XB8.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
@@ -524,7 +517,7 @@
     <img src="https://s41.ax1x.com/2026/04/29/peIMV1I.png" style="flex: 1 1 calc(20% - 8px); min-width: 120px; height: 180px; border-radius: 12px; object-fit: contain; background: #f5f5f5;">
 </div>
     <p>最后，技术数字化：全程采用数字化创作支撑，从线稿到上色，精准复刻五朝古建形制，实现传统美学与现代科技的完美融合。</p>
-    <p>为进一步放大作品的影响力，我们创新搭建专属网页平台。网页以《千里江山图》为视觉基底，集纳单图与长卷全景，通过可交互的数字形态，实现作品从“线下展示”到“云端交互”的终极升级，让千年营造智慧在数字时代焕发磅礴生命力。</p>
+    <p>为进一步放大作品的影响力，我们创新搭建专属网页平台。网页以《千里江山图》为视觉基底，集纳单图与长卷全景，让千年营造智慧在数字时代焕发磅礴生命力。</p>
 </section>
     <section id="art">
         <h2>艺术表达</h2>
