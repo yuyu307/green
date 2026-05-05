@@ -433,38 +433,47 @@
     </section>
 
     <section id="showcase">
-        <h2>作品展示</h2>
-        <div class="gallery">
-            <!-- 替换为永久可用的测试链接，确保全部显示 -->
-            <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBIXge.jpg" data-caption="唐代建筑">
-                <img src="https://s41.ax1x.com/2026/04/08/peaPuZD.jpg" alt="唐代建筑">
-                <p>唐代</p>
-            </div>
-            <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/08/peaPesK.jpg" data-caption="宋代建筑">
-                <img src="https://s41.ax1x.com/2026/04/08/peaPesK.jpg" alt="宋代建筑">
-                <p>宋代</p>
-            </div>
-            <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBIO3D.jpg" data-caption="元代建筑">
-                <img src="https://s41.ax1x.com/2026/04/13/peBIO3D.jpg" alt="元代建筑">
-                <p>元代</p>
-            </div>
-            <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/08/peaPadg.png" data-caption="明代建筑">
-                <img src="https://s41.ax1x.com/2026/04/08/peaPadg.png" alt="明代建筑">
-                <p>明代</p>
-            </div>
-            <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBok8S.jpg" data-caption="清代建筑">
-                <img src="https://s41.ax1x.com/2026/04/13/peBok8S.jpg" alt="清代建筑">
-                <p>清代</p>
-            </div>
+    <h2>作品展示</h2>
+    <!-- 五朝单图 gallery -->
+    <div class="gallery">
+        <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBIXge.jpg" data-caption="唐代建筑">
+            <img src="https://s41.ax1x.com/2026/05/05/pebpujg.jpg" alt="唐代建筑">
+            <p>唐代</p>
         </div>
-                
-        <!-- 组图 和上方单图同宽适配 完整不裁剪 -->
-<div style="margin: 30px 15px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);">
-    <img src="https://s41.ax1x.com/2026/04/29/peIhNfU.jpg" 
-         alt="五朝筑韵组图" 
-         
-</div>
-    </section>
+        <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/08/peaPesK.jpg" data-caption="宋代建筑">
+            <img src="https://s41.ax1x.com/2026/05/05/pebpMuQ.jpg" alt="宋代建筑">
+            <p>宋代</p>
+        </div>
+        <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBIO3D.jpg" data-caption="元代建筑">
+            <img src="https://s41.ax1x.com/2026/05/05/pebpngS.jpg" alt="元代建筑">
+            <p>元代</p>
+        </div>
+        <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/08/peaPadg.png" data-caption="明代建筑">
+            <img src="https://s41.ax1x.com/2026/05/05/pebplHs.jpg" alt="明代建筑">
+            <p>明代</p>
+        </div>
+        <div class="gallery-item" data-img="https://s41.ax1x.com/2026/04/13/peBok8S.jpg" data-caption="清代建筑">
+            <img src="https://s41.ax1x.com/2026/05/05/pebpQBj.jpg" alt="清代建筑">
+            <p>清代</p>
+        </div>
+    </div>
+
+    <!-- 组图模块：单独占一排，与单图完全分离 -->
+    <div style="margin: 30px 15px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); padding: 24px; background: #fff; display: flex; align-items: center; gap: 32px;">
+        <!-- 左侧组图：固定比例+不压缩，与整体卡片风格统一 -->
+        <img src="https://s41.ax1x.com/2026/05/05/pebpm38.jpg" 
+             alt="效果整体图"
+             style="width: 30%; max-width: 280px; height: auto; display: block; flex-shrink: 0; border-radius: 8px;">
+        
+        <!-- 右侧文字介绍：与整体排版风格统一 -->
+        <div style="flex: 1;">
+            <h3 style="font-size: 20px; margin: 0 0 14px 0; font-weight: 600; color: #2d3748;">整体效果图</h3>
+            <p style="font-size: 16px; line-height: 1.8; color: #4a5568; margin: 0;">
+远山层叠如染，近树苍劲含翠。画面中，五座古建自远而近错落铺展，深绿的瓦顶、朱红的立柱、雕饰的飞檐，沿蜿蜒的路径次第呈现，与青绿山水相融，尽显东方建筑的雅致气韵。
+            </p>
+        </div>
+    </div>
+</section>
 
     <!-- 图片放大弹窗 -->
     <div class="modal" id="imgModal">
