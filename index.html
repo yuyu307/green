@@ -459,21 +459,21 @@
         </div>
     </div>
 
-    <!-- 组图模块：单独占一排，与单图完全分离 -->
-    <div style="margin: 30px 15px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); padding: 24px; background: #fff; display: flex; align-items: center; gap: 32px;">
-        <!-- 左侧组图：固定比例+不压缩，与整体卡片风格统一 -->
-        <img src="https://s41.ax1x.com/2026/05/05/pebpm38.jpg" 
-             alt="效果整体图"
-             style="width: 30%; max-width: 280px; height: auto; display: block; flex-shrink: 0; border-radius: 8px;">
-        
-        <!-- 右侧文字介绍：与整体排版风格统一 -->
-        <div style="flex: 1;">
-            <h3 style="font-size: 20px; margin: 0 0 14px 0; font-weight: 600; color: #2d3748;">整体效果图</h3>
-            <p style="font-size: 16px; line-height: 1.8; color: #4a5568; margin: 0;">
+    <!-- 组图模块：微信兼容优化版 -->
+<div style="margin: 30px 15px 0; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); padding: 24px; background: #fff; display: flex; align-items: center; box-sizing: border-box;">
+    <!-- 左侧组图：微信兼容优化，去掉flex-shrink冲突 -->
+    <img src="https://s41.ax1x.com/2026/05/05/pebpm38.jpg" 
+         alt="效果整体图"
+         style="width: 280px; height: auto; display: block; border-radius: 8px; margin-right: 32px; object-fit: contain;">
+    
+    <!-- 右侧文字介绍：微信防挤字优化 -->
+    <div style="flex: 1; min-width: 0;">
+        <h3 style="font-size: 20px; margin: 0 0 14px 0; font-weight: 600; color: #2d3748;">整体效果图</h3>
+        <p style="font-size: 16px; line-height: 1.8; color: #4a5568; margin: 0;">
 远山层叠如染，近树苍劲含翠。画面中，五座古建自远而近错落铺展，深绿的瓦顶、朱红的立柱、雕饰的飞檐，沿蜿蜒的路径次第呈现，与青绿山水相融，尽显东方建筑的雅致气韵。
-            </p>
-        </div>
+        </p>
     </div>
+</div>
 </section>
 
     <!-- 图片放大弹窗 -->
