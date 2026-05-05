@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
             scroll-behavior: smooth;
-            font-family: "Microsoft YaHei", "SimSun", serif;
+            font-family: "SimHei", "SimSun", "Microsoft YaHei", serif;
         }
 
         :root {
@@ -99,6 +99,7 @@
     letter-spacing: 8px;
     position: relative;
     animation: homeFade 1.5s ease-in-out;
+    font-family: "SimHei", "SimSun", "Microsoft YaHei", serif;
 }
         section {
             padding: 120px 60px;
@@ -484,8 +485,8 @@
         </div>
     </div>
 
-   <section id="tech">
-   <section id="tech">
+   
+<section id="tech">
     <h2>创新驱动</h2>
 
     <p>在作品落地呈现中，我们构建了“三维立体”的传播方式。</p>
@@ -560,25 +561,26 @@
             }
         });
 
-        const navLinks = document.querySelectorAll('.nav-links a');
-        const sections = document.querySelectorAll('section');
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
+        // 修复后的导航高亮JS
+const navLinks = document.querySelectorAll('.nav-links a');
+const sections = document.querySelectorAll('section');
+window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        // 修复：加上window.，并补充上限条件，避免后面的section覆盖current
+        if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
+            current = section.getAttribute('id');
+        }
+    });
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
